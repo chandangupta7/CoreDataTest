@@ -26,14 +26,15 @@ class ViewController: UIViewController,DataPass {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // First Commit has been done.
-        btnSave.titleLabel?.text = "Save"
+        btnSave.setTitle("Save", for: UIControlState.normal)
+        
     }
 
     @IBAction func btnSaveClick(_ sender: Any) {
         let dict = ["name":txtName.text,"address":txtAddress.text,"city":txtCity.text,"mobile":txtMobile.text]
         
         if isEdit {
-            
+            DatabaseHelper.shareInstance.updateData(object: dict as! [String:String], index: self.index)
         }else {
             DatabaseHelper.shareInstance.Save(object: dict as! [String : String])
         }
@@ -47,7 +48,7 @@ class ViewController: UIViewController,DataPass {
     
     func data(object: [String : String], index: Int, isEdit: Bool) {
         
-        btnSave.titleLabel?.text = "Update"
+        btnSave.setTitle("Update", for: UIControlState.normal)
         
         txtName.text = object["name"]
         txtAddress.text = object["address"]

@@ -53,4 +53,18 @@ class DatabaseHelper {
         }
         return users
     }
+    
+    func updateData(object:[String:String], index:Int){
+        var users = getStudentData()
+        users[index].name = object["name"]
+        users[index].address = object["address"]
+        users[index].city = object["city"]
+        users[index].mobile = object["mobile"]
+        
+        do{
+            try context?.save()
+        }catch{
+            print("Unable to update")
+        }
+    }
 }
