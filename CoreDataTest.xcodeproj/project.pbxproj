@@ -14,6 +14,11 @@
 		845F78AF207A2A1B004AA5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845F78AE207A2A1B004AA5C6 /* Assets.xcassets */; };
 		845F78B2207A2A1B004AA5C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F78B0207A2A1B004AA5C6 /* LaunchScreen.storyboard */; };
 		845F78BD207A2A1B004AA5C6 /* CoreDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78BC207A2A1B004AA5C6 /* CoreDataTestTests.swift */; };
+		845F78C9207A2C35004AA5C6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78C7207A2C35004AA5C6 /* User+CoreDataClass.swift */; };
+		845F78CA207A2C35004AA5C6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78C8207A2C35004AA5C6 /* User+CoreDataProperties.swift */; };
+		845F78CC207A304D004AA5C6 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78CB207A304D004AA5C6 /* DatabaseHelper.swift */; };
+		845F78CE207A3647004AA5C6 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78CD207A3647004AA5C6 /* ListTableViewCell.swift */; };
+		845F78D0207A3662004AA5C6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F78CF207A3662004AA5C6 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		845F78B8207A2A1B004AA5C6 /* CoreDataTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845F78BC207A2A1B004AA5C6 /* CoreDataTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestTests.swift; sourceTree = "<group>"; };
 		845F78BE207A2A1B004AA5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845F78C7207A2C35004AA5C6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		845F78C8207A2C35004AA5C6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		845F78CB207A304D004AA5C6 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		845F78CD207A3647004AA5C6 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		845F78CF207A3662004AA5C6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,8 @@
 		845F78A3207A2A1B004AA5C6 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				845F78C7207A2C35004AA5C6 /* User+CoreDataClass.swift */,
+				845F78C8207A2C35004AA5C6 /* User+CoreDataProperties.swift */,
 				845F78A4207A2A1B004AA5C6 /* AppDelegate.swift */,
 				845F78A6207A2A1B004AA5C6 /* ViewController.swift */,
 				845F78A8207A2A1B004AA5C6 /* Main.storyboard */,
@@ -86,6 +98,9 @@
 				845F78B0207A2A1B004AA5C6 /* LaunchScreen.storyboard */,
 				845F78B3207A2A1B004AA5C6 /* Info.plist */,
 				845F78AB207A2A1B004AA5C6 /* CoreDataTest.xcdatamodeld */,
+				845F78CB207A304D004AA5C6 /* DatabaseHelper.swift */,
+				845F78CD207A3647004AA5C6 /* ListTableViewCell.swift */,
+				845F78CF207A3662004AA5C6 /* ListViewController.swift */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
@@ -202,8 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845F78CE207A3647004AA5C6 /* ListTableViewCell.swift in Sources */,
 				845F78A7207A2A1B004AA5C6 /* ViewController.swift in Sources */,
 				845F78AD207A2A1B004AA5C6 /* CoreDataTest.xcdatamodeld in Sources */,
+				845F78C9207A2C35004AA5C6 /* User+CoreDataClass.swift in Sources */,
+				845F78CA207A2C35004AA5C6 /* User+CoreDataProperties.swift in Sources */,
+				845F78CC207A304D004AA5C6 /* DatabaseHelper.swift in Sources */,
+				845F78D0207A3662004AA5C6 /* ListViewController.swift in Sources */,
 				845F78A5207A2A1B004AA5C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
