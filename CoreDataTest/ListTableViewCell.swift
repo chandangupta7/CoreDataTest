@@ -10,6 +10,21 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblAddress: UILabel!
+    @IBOutlet weak var lblCity: UILabel!
+    @IBOutlet weak var lblMobile: UILabel!
+    
+    
+    var user:User!{
+        didSet{
+            lblName.text = user.name
+            lblAddress.text = user.address
+            lblCity.text = user.city
+            lblMobile.text = user.mobile
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

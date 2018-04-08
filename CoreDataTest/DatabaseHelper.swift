@@ -30,4 +30,27 @@ class DatabaseHelper {
             print("Record not saved")
         }
     }
+    
+    func getStudentData() -> [User] {
+        var users = [User]()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
+        do{
+            users = try context?.fetch(fetchRequest) as! [User]
+        }catch{
+            print("Can not get data")
+        }
+        return users
+    }
+    
+    func deleteData(index:Int) -> [User]{
+        var users = getStudentData()//[User]()
+        context?.delete(users[index])
+        users.remove(at: index)
+        do{
+            try context?.save()
+        }catch{
+            print("Can not delete data")
+        }
+        return users
+    }
 }
